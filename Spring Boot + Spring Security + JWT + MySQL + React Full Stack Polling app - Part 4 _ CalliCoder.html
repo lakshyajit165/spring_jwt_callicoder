@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<title>Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 | CalliCoder</title>
+<meta name="description" content="Building an End-to-End Full Stack Polling App including Authentication and Authorization with Spring Boot, Spring Security, JWT, MySQL database, and React. In this article, We&#39;ll build the client side of the application using React and Ant Design.">
+<meta property="og:title" content="Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4">
+<meta property="og:description" content="Building an End-to-End Full Stack Polling App including Authentication and Authorization with Spring Boot, Spring Security, JWT, MySQL database, and React. In this article, We&#39;ll build the client side of the application using React and Ant Design.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/">
+<meta property="og:site_name" content="CalliCoder">
+<meta property="og:locale" content="en-us">
+<meta property="og:image" content="https://www.callicoder.com/assets/images/post/large/spring-boot-spring-security-jwt-react-and-design-full-stack-polls-app-part-4.jpg">
+<meta property="og:updated_time" content="2019-10-29T11:11:54+05:30">
+<meta property="og:see_also" content="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-1/">
+<meta property="og:see_also" content="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-2/">
+<meta property="og:see_also" content="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-3/">
+<meta property="article:author" content="https://www.facebook.com/callicoder">
+<meta property="article:publisher" content="https://www.facebook.com/callicoder">
+<meta property="article:published_time" content="2018-02-10T10:00:00+00:00">
+<meta property="article:modified_time" content="2019-10-29T11:11:54+05:30">
+<meta property="article:section" content="Spring Boot">
+<meta property="fb:admins" content="1023945787673927">
+<meta property="fb:app_id" content="461994310800790">
+<link rel="publisher" href="https://plus.google.com/b/103952714703205279563">
+<meta itemprop="name" content="Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4">
+<meta itemprop="description" content="Building an End-to-End Full Stack Polling App including Authentication and Authorization with Spring Boot, Spring Security, JWT, MySQL database, and React. In this article, We&#39;ll build the client side of the application using React and Ant Design.">
+<meta itemprop="datePublished" content="2018-02-10T10:00:00+00:00">
+<meta itemprop="dateModified" content="2019-10-29T11:11:54+05:30">
+<meta itemprop="wordCount" content="1792">
+<meta itemprop="image" content="https://www.callicoder.com/assets/images/post/large/spring-boot-spring-security-jwt-react-and-design-full-stack-polls-app-part-4.jpg">
+<meta itemprop="keywords" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.callicoder.com/assets/images/post/large/spring-boot-spring-security-jwt-react-and-design-full-stack-polls-app-part-4.jpg">
+<meta name="twitter:title" content="Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4">
+<meta name="twitter:description" content="Building an End-to-End Full Stack Polling App including Authentication and Authorization with Spring Boot, Spring Security, JWT, MySQL database, and React. In this article, We&#39;ll build the client side of the application using React and Ant Design."><meta name="twitter:site" content="@callicoder">
+<meta name="twitter:creator" content="@callicoder">
+<script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(12).txt"></script><script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/osd.js"></script><script type="text/javascript" async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/analytics.js"></script><script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(13).txt"></script><script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(14).txt" id="google_shimpl"></script><script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/gtm.js"></script><script type="application/ld+json">
+{
+ 	"@context": "http://schema.org",
+ 	"@type": "BlogPosting",
+ 	"headline": "Spring Boot &#43; Spring Security &#43; JWT &#43; MySQL &#43; React Full Stack Polling app - Part 4",
+ 	"description": "Building an End-to-End Full Stack Polling App including Authentication and Authorization with Spring Boot, Spring Security, JWT, MySQL database, and React. In this article, We&#39;ll build the client side of the application using React and Ant Design.",
+ 	"publisher": {
+ 		"@type": "Organization",
+ 		"name": "CalliCoder",
+ 		"url": "https://www.callicoder.com",
+ 		"logo": {
+ 			"type": "ImageObject",
+ 			"url": "https://www.callicoder.com/assets/images/callicoder-310x310.png",
+ 			"sameAs": [
+ 				
+ 				"https://www.facebook.com/callicoder",
+ 				"https://twitter.com/callicoder",
+ 				"https://www.instagram.com/callicoder",
+ 				"https://plus.google.com/b/103952714703205279563",
+ 				"https://pinterest.com/callicoder",
+ 				"https://www.linkedin.com/in/callicoder",
+ 				"https://github.com/callicoder"
+			]
+ 		}
+ 	},
+ 	"mainEntityOfPage": {
+ 		"@type": "WebPage",
+ 		"@id": "https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/"
+ 	},
+	"url": "https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/",
+ 	"dateModified": "2019-10-29T11:11:54+05:30",
+ 	"datePublished": "2018-02-10T10:00:00+00:00",
+ 	"image": " https://www.callicoder.com/assets/images/post/large/spring-boot-spring-security-jwt-react-and-design-full-stack-polls-app-part-4.jpg",
+ 	"author": {
+ 		"@type": "Person",
+ 		"name": "Rajeev Singh",
+ 		"url": "https://www.callicoder.com/about",
+ 		"image": "https://www.callicoder.com/assets/images/rajeev.jpg"
+ 	}
+ 	
+ }
+</script>
+<meta name="p:domain_verify" content="d9b8fb20d5e442f39657627726a60230">
+<meta name="google-site-verification" content="6jIXFqhVj98VVizcknwwkl1uPRleW-yYoAyzkhxWgL0">
+<meta name="msvalidate.01" content="2BD95A5541E24CB87F9C558D509FA96F">
+<link rel="canonical" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/">
+<link rel="icon" type="image/png" href="https://www.callicoder.com/favicon.png">
+<link rel="alternate" type="application/rss+xml" title="CalliCoder" href="https://www.callicoder.com/feed.xml">
+<link rel="feed" type="application/rss+xml" title="CalliCoder" href="https://www.callicoder.com/feed.xml">
+<link href="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/css(3)" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/main.css">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T4Z6B9Q');</script>
+<script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/embed.js" data-timestamp="1594975649873"></script><link rel="preload" href="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(15).txt" as="script"><script type="text/javascript" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(15).txt"></script><link rel="preload" href="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(16).txt" as="script"><script type="text/javascript" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(16).txt"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.4ccc2ba08c360cad557fd79f7fdaa34f.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.5439bce5811a3908f603eb4fa66869dd.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.29c410fc9375f4c2406b8150dc967c51.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/alfalfalfa.0823c767a3bc925f628afd9bed26c958.js" async="" charset="UTF-8"></script></head>
+<body cz-shortcut-listen="true">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4Z6B9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header class="site-header" id="site-header" role="banner">
+<div class="wrapper">
+<button class="menu">
+<div class="line-wrap">
+<div class="line top"></div>
+<div class="line center"></div>
+<div class="line bottom"></div>
+</div>
+</button>
+<div class="site-branding">
+<a class="site-logo" href="https://www.callicoder.com/">
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Artboard" transform="translate(-24.000000, -24.000000)">
+<circle id="Oval" stroke="#08b27f" fill="#08b27f" cx="60" cy="60" r="35"></circle>
+<g id="noun_185803_cc" transform="translate(35.000000, 35.000000)" fill-rule="nonzero" fill="#FFFFFF">
+<g id="Group">
+<g id="Shape">
+<path d="M35.8601297,42.5812415 C39.2906761,40.3907467 39.4812328,40.5806771 37.6706813,41.9143867 C35.8601297,43.247047 39.1001193,41.3430217 37.3851087,42.5812415 L36.6228817,43.3430615 C36.6228817,43.3430615 35.3840004,44.7717363 34.5262326,44.8667014 C33.6684649,44.9616665 35.4784914,44.7717363 34.2401351,45.3436259 C33.0012538,45.9144662 23.9379973,50.0016408 9.27352766,39.342982 C13.37181,46.200411 20.6134909,49.2482156 26.7123565,49.3431807 C26.7123565,49.3431807 24.8057392,49.3431807 25.8545887,49.5336357 C26.9029132,49.7240907 25.3779343,51.1522408 16.4201928,47.8195408 C16.8023562,48.6763259 16.897372,48.9617461 17.9456966,49.5336357 C17.9456966,49.5336357 6.22409493,45.5330315 2.12738755,33.7237728 C2.22240344,35.1519228 2.31741934,36.7715773 2.31741934,36.7715773 C2.31741934,36.7715773 -3.59141439,26.2944541 3.46128472,13.3419406 C10.5129339,0.389427116 26.0456703,-0.0864480358 28.1417944,0.00851713211 C30.2384436,0.10348229 41.9584704,2.77037684 44.6267896,5.53276121 C47.2956339,8.29409632 43.2934174,6.48503617 43.2934174,6.48503617 C43.2934174,6.48503617 41.9584704,7.24685613 44.1511852,8.38906145 C46.3423252,9.53284077 48.7245469,13.3419406 46.9134705,11.9132658 C45.103444,10.4851157 47.7712383,13.6278854 48.0573358,13.8183404 C48.3429085,14.0087953 44.0551194,11.9132658 45.1989848,13.1514856 C46.3423252,14.3891807 51.2973254,19.8184596 49.6778555,21.438114 C48.0573358,23.0567192 47.4851407,18.5802399 47.1995681,18.2948197 C46.9134705,18.0083502 47.6772723,24.8663039 47.1995681,26.0085092 C46.7229138,27.1517638 46.8184546,23.4381538 45.8661959,22.2948992 C44.9134122,21.1521693 44.6267896,21.2471344 43.9595785,21.2471344 C43.2934174,21.2471344 41.482866,19.4380744 41.2917842,18.3897849 C41.1012275,17.3420201 40.5295573,17.0560752 39.6712645,16.1992901 C38.8140217,15.3419803 37.4801245,14.4851952 35.8601297,14.5801603 C34.2401351,14.6756502 35.0979028,12.6750858 32.3340427,12.6750858 C29.5707076,12.6750858 27.9501879,12.1997353 25.568491,13.2469754 C23.1867943,14.2947402 18.8029394,15.5324353 18.421301,15.6274005 C18.0401875,15.7228903 22.4235174,13.2469754 23.0912534,12.8655408 C23.7579396,12.4851554 12.704074,15.3419803 10.8935224,19.7229698 C9.082446,24.1050087 7.46350115,31.6282431 13.6573826,38.4851475 C19.851264,45.3436259 30.9046047,46.0094314 35.8601297,42.5812415"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+<span>CalliCoder</span>
+</a>
+</div>
+<div class="mobile-search">
+<button type="button" class="search-opener">
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+<path d="M0 0h24v24H0z" fill="none"></path>
+</svg>
+</button>
+<button type="button" class="search-close">
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+<path d="M0 0h24v24H0z" fill="none"></path>
+</svg>
+</button>
+</div>
+<div class="header-search">
+<form onsubmit="return executeQuery();" id="cse-search-box-form-id">
+<div class="search-form-container">
+<input type="text" class="search-box" id="cse-search-input-box-id" autocomplete="off" placeholder="Search CalliCoder">
+<button type="button" class="search-submit">
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+<path d="M0 0h24v24H0z" fill="none"></path>
+</svg>
+</button>
+</div>
+</form>
+</div>
+<nav class="desktop-navigation">
+<ul>
+<li class="">
+<a href="https://www.callicoder.com/categories/golang">Golang</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/kotlin">Kotlin</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/java">Java</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/spring-boot">Spring Boot</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/node-js">Node.js</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/system-design">System Design</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/devops">DevOps</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/algorithms">Algorithms</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/about">About</a>
+</li>
+</ul>
+</nav>
+<div class="nav-shadow"></div>
+</div>
+</header>
+<div class="page-content post-container has-sidebar" aria-label="Content" style="height: auto !important;">
+<nav class="navigation-drawer" id="nav-drawer">
+<ul>
+<li class="">
+<a href="https://www.callicoder.com/categories/golang">Golang</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/kotlin">Kotlin</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/java">Java</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/spring-boot">Spring Boot</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/node-js">Node.js</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/system-design">System Design</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/devops">DevOps</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/categories/algorithms">Algorithms</a>
+</li>
+<li class="">
+<a href="https://www.callicoder.com/about">About</a>
+</li>
+</ul>
+</nav>
+<div class="wrapper-article" style="height: auto !important;">
+<div class="primary-content" style="height: auto !important;">
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" style="height: auto !important;">
+<header class="post-header">
+<h1 class="post-title" itemprop="name headline">Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4</h1>
+<p class="post-meta">
+<span class="meta-entry author-entry">
+<img class="author-picture" alt="Author" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/rajeev.jpg">
+<a href="https://www.callicoder.com/about" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+Rajeev Singh
+</a>
+</span>
+<span class="separator">•</span>
+<span class="meta-entry category">
+<a href="https://www.callicoder.com/categories/spring-boot">
+<span>Spring Boot </span>
+</a>
+</span>
+<span class="separator">•</span>
+<span class="meta-entry date-entry">
+<time datetime="2018-02-10T10:00:00Z" itemprop="datePublished">
+Feb 10, 2018
+</time>
+</span>
+<span class="separator">•</span>
+<span class="meta-entry reading-time-entry">
+9 mins read
+</span>
+</p>
+</header>
+<div class="post-content" itemprop="articleBody" style="height: auto !important;">
+<p>Welcome to the 4th and final part of my <a href="https://www.callicoder.com/series/spring-security-react/">full stack app development series</a> with Spring Boot, Spring Security, JWT, MySQL and React.</p>
+<p>In the last 3 articles, we created the backend project, setup spring security with JWT authentication, and written the rest APIs for Login, Signup, Polls, and Users.</p>
+<p>In this article, We’ll build the client side of the application using <a href="https://reactjs.org/">React</a> and <a href="https://ant.design/">Ant Design</a>.</p>
+<blockquote>
+<p>You can find the complete source code of the project on <a href="https://github.com/callicoder/spring-security-react-ant-design-polls-app">Github</a>.</p>
+</blockquote>
+<figure class="shadowed">
+<picture>
+<source media="(max-width: 520px)" srcset="https://www.callicoder.com/assets/images/post/medium/spring-boot-spring-security-jwt-mysql-react-full-stack-app-user-interface.jpg">
+<img src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/spring-boot-spring-security-jwt-mysql-react-full-stack-app-user-interface.jpg" alt="Spring Boot, Spring Security, JWT, MySQL, React, Ant Design Full Stack Polling App with User Registration and Authentication Part 4">
+</picture>
+</figure>
+<h2 id="bootstrapping-the-front-end-project">Bootstrapping the Front End Project<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#bootstrapping-the-front-end-project"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h2>
+<p>Follow the steps below to setup the front-end project.</p>
+<h3 id="1-installing-create-react-app">1. Installing create-react-app<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#1-installing-create-react-app"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>First of all, we’ll install <a href="https://github.com/facebook/create-react-app"><code>create-react-app</code></a>, a command line tool for creating react apps</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g create-react-app
+</code></pre>
+<h3 id="2-creating-the-app">2. Creating the app<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#2-creating-the-app"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>Now let’s create the app using <code>create-react-app</code> tool by typing the following command -</p>
+<pre class=" language-bash"><code class=" language-bash">create-react-app polling-app-client
+</code></pre>
+<h3 id="3-installing-additional-dependencies">3. Installing Additional Dependencies<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#3-installing-additional-dependencies"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>We’ll be using the following additional dependencies in our project -</p>
+<ol>
+<li><p><a href="https://ant.design/docs/react/introduce">And Design</a>: An excellent react based user interface library for designing the user interface.</p></li>
+<li><p><a href="https://github.com/ReactTraining/react-router">React Router</a>: Client side routing solution for react apps.</p></li>
+</ol>
+<p>Let’s install these dependencies by typing the following command</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token builtin class-name">cd</span> polling-app-client
+<span class="token function">npm</span> <span class="token function">install</span> antd react-router-dom --save
+</code></pre>
+<p>We’ll also need some dev dependencies to customize Ant Design’s theme and enable on-demand component import. Type the following command to install these dev dependencies -</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token function">npm</span> <span class="token function">install</span> react-app-rewired babel-plugin-import react-app-rewire-less --save-dev
+</code></pre>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="1443568091" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="CK3huajz0-oCFcEQvQodemMJ-w" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<h3 id="4-configuring-ant-design">4. Configuring Ant Design<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#4-configuring-ant-design"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>Now let’s configure ant design and customize its theme by overriding <code>less</code> variables.</p>
+<ul>
+<li><p><strong>Using react-app-rewired to customize default webpack config</strong></p>
+<p>We’ll use react-app-rewired to enable customization. Open <code>package.json</code> file and replace the following scripts</p>
+<pre class=" language-json"><code class=" language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"react-scripts start"</span><span class="token punctuation">,</span>
+  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"react-scripts build"</span><span class="token punctuation">,</span>
+  <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"react-scripts test --env=jsdom"</span><span class="token punctuation">,</span>
+  <span class="token property">"eject"</span><span class="token operator">:</span> <span class="token string">"react-scripts eject"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>with these scripts -</p>
+<pre class=" language-json"><code class=" language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"react-app-rewired start"</span><span class="token punctuation">,</span>
+  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"react-app-rewired build"</span><span class="token punctuation">,</span>
+  <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"react-app-rewired test --env=jsdom"</span><span class="token punctuation">,</span>
+  <span class="token property">"eject"</span><span class="token operator">:</span> <span class="token string">"react-scripts eject"</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li><p><strong>Overriding configurations with config-overrides.js</strong></p>
+<p>Now create a file named <code>config-overrides.js</code> in the root directory of the project and add the following code to it -</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> injectBabelPlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'react-app-rewired'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> rewireLess <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'react-app-rewire-less'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">override</span><span class="token punctuation">(</span><span class="token parameter">config<span class="token punctuation">,</span> env</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    config <span class="token operator">=</span> <span class="token function">injectBabelPlugin</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'import'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> libraryName<span class="token punctuation">:</span> <span class="token string">'antd'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    config <span class="token operator">=</span> rewireLess<span class="token punctuation">.</span><span class="token function">withLoaderOptions</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      modifyVars<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">"@layout-body-background"</span><span class="token punctuation">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+          <span class="token string">"@layout-header-background"</span><span class="token punctuation">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+          <span class="token string">"@layout-footer-background"</span><span class="token punctuation">:</span> <span class="token string">"#FFFFFF"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      javascriptEnabled<span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> env<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Notice how we’re overriding Ant Design’s default less variables to customize the theme as per our needs.</p></li>
+</ul>
+<h3 id="5-running-the-app">5. Running the App<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#5-running-the-app"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>We’re done with all the configurations. Let’s run the app by typing the following command -</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token function">npm</span> start
+</code></pre>
+<h2 id="exploring-the-directory-structure-of-the-project">Exploring the directory structure of the Project<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#exploring-the-directory-structure-of-the-project"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h2>
+<p>Following is the directory structure of the complete front-end project. You can check out the entire source code on <a href="https://github.com/callicoder/spring-security-react-ant-design-polls-app">Github</a>.</p>
+<pre class=" language-bash"><code class=" language-bash">polling-app-client
+  ↳ public
+        ↳ favicon.png
+        ↳ index.html
+        ↳ manifest.json
+  ↳ src
+     ↳ app
+         ↳ App.css
+         ↳ App.js
+     ↳ common
+         ↳ AppHeader.css
+         ↳ AppHeader.js
+         ↳ LoadingIndicator.js
+         ↳ NotFound.css
+         ↳ NotFound.js
+         ↳ PrivateRoute.js
+         ↳ ServerError.css
+         ↳ ServerError.js
+     ↳ constants
+         ↳ index.js
+     ↳ poll
+         ↳ NewPoll.css
+         ↳ NewPoll.js
+         ↳ Poll.css
+         ↳ Poll.js
+         ↳ PollList.css
+         ↳ PollList.js    
+     ↳ user
+         ↳ login
+             ↳ Login.css
+             ↳ Login.js
+         ↳ profile
+             ↳ Profile.css
+             ↳ Profile.js
+         ↳ signup
+             ↳ Signup.css
+             ↳ Signup.js
+     ↳ util
+         ↳ APIUtils.js
+         ↳ Colors.js
+         ↳ Helpers.js
+     ↳ index.css
+     ↳ index.js
+     ↳ logo.svg
+     ↳ poll.svg
+     ↳ registerServiceWorker.js                              
+  ↳ config-overrides.js
+  ↳ package.json   
+</code></pre><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: none; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-6533397327101411" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;"><ins id="aswift_8_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:929px;background-color:transparent;"><ins id="aswift_8_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 929px; background-color: transparent; overflow: visible;"><iframe id="aswift_8" name="aswift_8" style="left:0;position:absolute;top:0;border:0;width:929px;height:280px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="929" height="280" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!8" data-google-query-id="CLuN26jz0-oCFUPVfAodPKQDLg" data-load-complete="true"></iframe></ins></ins></ins></div>
+<p>In this article, I’ll give you a brief idea of how the project is structured and what each directory and files do.</p>
+<p>Going through every piece of code in this blog will be very time consuming, and is absolutely unnecessary. The code is simple and self-explanatory. A basic knowledge of React is needed to understand the code.</p>
+<p>You can download the code from <a href="https://github.com/callicoder/spring-security-react-ant-design-polls-app">Github</a> and go through it. I’ll always be here to help if you get stuck at something.</p>
+<p>All right! Let’s now understand some of the important pieces of code in our front-end project.</p>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="1579299463" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<h2 id="understanding-the-front-end-code">Understanding the front-end code<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#understanding-the-front-end-code"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h2>
+<h3 id="index-js">index.js<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#index-js"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>This file is the main entry point of our react application -</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'./index.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./app/App'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> registerServiceWorker <span class="token keyword">from</span> <span class="token string">'./registerServiceWorker'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> BrowserRouter <span class="token keyword">as</span> Router <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-router-dom'</span><span class="token punctuation">;</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Router<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Router<span class="token operator">&gt;</span><span class="token punctuation">,</span> 
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">registerServiceWorker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: none; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-6533397327101411" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;"><ins id="aswift_9_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:929px;background-color:transparent;"><ins id="aswift_9_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 929px; background-color: transparent; overflow: visible;"><iframe id="aswift_9" name="aswift_9" style="left:0;position:absolute;top:0;border:0;width:929px;height:280px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="929" height="280" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(2).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!9" data-google-query-id="CKn726jz0-oCFVebvQodxwcDIg" data-load-complete="true"></iframe></ins></ins></ins></div>
+<p>In the above script, we simply render the <code>App</code> component in a DOM element with id <code>root</code> (This DOM element is available in <code>public/index.html</code> file).</p>
+<h3 id="src-app-app-js"><strong>src/app/App.js</strong><a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-app-app-js"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>It defines the <code>App</code> component. The <code>App</code> component is the main top-level component of our application. It defines the primary layout and routing, loads the currently logged in user, and passes the <code>currentUser</code> and <code>isAuthenticated</code> property to other components.</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'./App.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  Route<span class="token punctuation">,</span>
+  withRouter<span class="token punctuation">,</span>
+  Switch
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-router-dom'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getCurrentUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../util/APIUtils'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../constants'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> PollList <span class="token keyword">from</span> <span class="token string">'../poll/PollList'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> NewPoll <span class="token keyword">from</span> <span class="token string">'../poll/NewPoll'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Login <span class="token keyword">from</span> <span class="token string">'../user/login/Login'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Signup <span class="token keyword">from</span> <span class="token string">'../user/signup/Signup'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Profile <span class="token keyword">from</span> <span class="token string">'../user/profile/Profile'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> AppHeader <span class="token keyword">from</span> <span class="token string">'../common/AppHeader'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> NotFound <span class="token keyword">from</span> <span class="token string">'../common/NotFound'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> LoadingIndicator <span class="token keyword">from</span> <span class="token string">'../common/LoadingIndicator'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> PrivateRoute <span class="token keyword">from</span> <span class="token string">'../common/PrivateRoute'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Layout<span class="token punctuation">,</span> notification <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'antd'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> Content <span class="token punctuation">}</span> <span class="token operator">=</span> Layout<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      currentUser<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      isAuthenticated<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      isLoading<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogout <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleLogout</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>loadCurrentUser <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadCurrentUser</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogin <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleLogin</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    notification<span class="token punctuation">.</span><span class="token function">config</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      placement<span class="token punctuation">:</span> <span class="token string">'topRight'</span><span class="token punctuation">,</span>
+      top<span class="token punctuation">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+      duration<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+  <span class="token punctuation">}</span>
+
+  <span class="token function">loadCurrentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      isLoading<span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">getCurrentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        currentUser<span class="token punctuation">:</span> response<span class="token punctuation">,</span>
+        isAuthenticated<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        isLoading<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        isLoading<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentDidMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadCurrentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Handle Logout, Set currentUser and isAuthenticated state which will be passed to other components</span>
+  <span class="token function">handleLogout</span><span class="token punctuation">(</span>redirectTo<span class="token operator">=</span><span class="token string">"/"</span><span class="token punctuation">,</span> notificationType<span class="token operator">=</span><span class="token string">"success"</span><span class="token punctuation">,</span> description<span class="token operator">=</span><span class="token string">"You're successfully logged out."</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token constant">ACCESS_TOKEN</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      currentUser<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      isAuthenticated<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>history<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>redirectTo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    notification<span class="token punctuation">[</span>notificationType<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      message<span class="token punctuation">:</span> <span class="token string">'Polling App'</span><span class="token punctuation">,</span>
+      description<span class="token punctuation">:</span> description<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/* 
+   This method is called by the Login component after successful login 
+   so that we can load the logged-in user details and set the currentUser &amp;
+   isAuthenticated state, which other components will use to render their JSX
+  */</span>
+  <span class="token function">handleLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    notification<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      message<span class="token punctuation">:</span> <span class="token string">'Polling App'</span><span class="token punctuation">,</span>
+      description<span class="token punctuation">:</span> <span class="token string">"You're successfully logged in."</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadCurrentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>history<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoading<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>LoadingIndicator <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Layout className<span class="token operator">=</span><span class="token string">"app-container"</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>AppHeader isAuthenticated<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isAuthenticated<span class="token punctuation">}</span> 
+            currentUser<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>currentUser<span class="token punctuation">}</span> 
+            onLogout<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogout<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+          <span class="token operator">&lt;</span>Content className<span class="token operator">=</span><span class="token string">"app-content"</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"container"</span><span class="token operator">&gt;</span>
+              <span class="token operator">&lt;</span>Switch<span class="token operator">&gt;</span>      
+                <span class="token operator">&lt;</span>Route exact path<span class="token operator">=</span><span class="token string">"/"</span> 
+                  render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token operator">&lt;</span>PollList isAuthenticated<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isAuthenticated<span class="token punctuation">}</span> 
+                      currentUser<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>currentUser<span class="token punctuation">}</span> handleLogout<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogout<span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">"/login"</span> 
+                  render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token operator">&lt;</span>Login onLogin<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogin<span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">"/signup"</span> component<span class="token operator">=</span><span class="token punctuation">{</span>Signup<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">"/users/:username"</span> 
+                  render<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token operator">&lt;</span>Profile isAuthenticated<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isAuthenticated<span class="token punctuation">}</span> currentUser<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>currentUser<span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span>  <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>PrivateRoute authenticated<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isAuthenticated<span class="token punctuation">}</span> path<span class="token operator">=</span><span class="token string">"/poll/new"</span> component<span class="token operator">=</span><span class="token punctuation">{</span>NewPoll<span class="token punctuation">}</span> handleLogout<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogout<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>PrivateRoute<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>Route component<span class="token operator">=</span><span class="token punctuation">{</span>NotFound<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+              <span class="token operator">&lt;</span><span class="token operator">/</span>Switch<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>Content<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Layout<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">withRouter</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="src-common-common-components">src/common - Common Components<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-common-common-components"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<ul>
+<li><p><strong>AppHeader.js</strong>: Header component which renders Login &amp; SignUp buttons for unauthenticated users, and Home, Profile &amp; Create Poll buttons for authenticated users.</p></li>
+<li><p><strong>LoadingIndicator.js</strong>: It is used by other components to render a loading indicator while an API call is in progress.</p></li>
+<li><p><strong>NotFound.js</strong>: We use this in <code>App</code> component to render a 404 Not Found page if none of the routes match the current url.</p></li>
+<li><p><strong>PrivateRoute.js</strong>: A meta component that redirects to <code>/login</code> if the user is trying to access a protected page without authentication.</p></li>
+<li><p><strong>ServerError.js</strong>: Other components use this to render a 500 Server Error page if any API responds with a 500 error which the component can’t handle.</p></li>
+</ul>
+<h3 id="src-constants">src/constants<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-constants"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<p>I’ve defined all the global constants in <code>src/constants/index.js</code> file for other components use -</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">API_BASE_URL</span> <span class="token operator">=</span> <span class="token string">'<a class="vglnk" href="http://localhost:5000/" rel="nofollow"><span>http</span><span>://</span><span>localhost</span><span>:</span><span>5000</span></a>'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token string">'accessToken'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">POLL_LIST_SIZE</span> <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">MAX_CHOICES</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">POLL_QUESTION_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">140</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">POLL_CHOICE_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">40</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">NAME_MIN_LENGTH</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">NAME_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">40</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">USERNAME_MIN_LENGTH</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">USERNAME_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">EMAIL_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">40</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">PASSWORD_MIN_LENGTH</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">PASSWORD_MAX_LENGTH</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="src-poll">src/poll<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-poll"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<ul>
+<li><p><strong>NewPoll.js</strong>: Renders the Poll creation form.</p></li>
+<li><p><strong>PollList.js</strong>: This component is used to render a list of polls. It is used to render all polls on the home page. We also use this in user’s profile page to render the list of polls created by that user, and the list of polls in which that user has voted.</p></li>
+<li><p><strong>Poll.js</strong>: It is used by the <code>PollList</code> component to render a single Poll.</p></li>
+</ul>
+<h3 id="src-user">src/user<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-user"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<ul>
+<li><p><strong>login/Login.js</strong>: The Login component renders the Login form calls the login API to authenticate a user.</p></li>
+<li><p><strong>signup/Signup.js</strong>: It renders the registration form and contains a bunch of client-side validations. It’s an interesting component to check out if you want to learn how to do form validations in React.</p></li>
+<li><p><strong>profile/Profile.js</strong>: The profile page renders a user’s public profile. It displays user’s basic information, the list of polls that the user has created, and the list of polls in which the user has voted.</p></li>
+</ul>
+<h3 id="src-util">src/util<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#src-util"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h3>
+<ul>
+<li><p><strong>APIUtils.js</strong>: All the Rest API calls are written in this script. It uses the <code>fetch</code> API to make requests to the backend server.</p></li>
+<li><p><strong>Colors.js</strong>: This util is used to get a random color to use in user’s avatar.</p></li>
+<li><p><strong>Helpers.js</strong>: It contains helper functions to format dates.</p></li>
+</ul>
+<h2 id="running-the-app">Running the app<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#running-the-app"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h2>
+<p>You can run the react app using <code>npm</code> like this -</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token builtin class-name">cd</span> polling-app-client
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token operator">&amp;&amp;</span> <span class="token function">npm</span> start
+</code></pre>
+<p>The above command will install any missing dependencies and start the app on port <code>3000</code>.</p>
+<p>If you just want to build the app, then type the following command -</p>
+<pre class=" language-bash"><code class=" language-bash"><span class="token function">npm</span> run build
+</code></pre>
+<p>The above command will create an optimized production build in a directory named <code>build/</code>.</p>
+<h2 id="over-to-you">Over to you<a class="header-link" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-4/#over-to-you"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"></path></svg></a></h2>
+<p>I always prefer writing practical end-to-end tutorials on this blog. Full stack end-to-end tutorials like this one give you a broader picture of the application and lets you think through the challenges that are faced in all the stacks.</p>
+<p>I hope that I didn’t overwhelm you with lots of code, and you were able to follow along and learn the concepts.</p><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: none; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-6533397327101411" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;"><ins id="aswift_10_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:929px;background-color:transparent;"><ins id="aswift_10_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 929px; background-color: transparent; overflow: visible;"><iframe id="aswift_10" name="aswift_10" style="left:0;position:absolute;top:0;border:0;width:929px;height:280px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="929" height="280" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(3).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!a" data-google-query-id="CKGS3Kjz0-oCFU2zvQodZxoCCA" data-load-complete="true"></iframe></ins></ins></ins></div>
+<p>If something is unclear and you want me to explain it in detail, then let me know in the comment section below. I’ll do my best to explain it to you.</p>
+<p>At last, I have some homework for you :) There are still a lot of stuff that we can improve in our polls app. I want you to work on them and submit a pull request on <a href="https://github.com/callicoder/spring-security-react-ant-design-polls-app">Github</a>.</p>
+<p>So here are some of the improvements that will make the polls app more awesome -</p>
+<ul>
+<li><p><strong>Email verification</strong>: There is no email verification right now in our application. Anyone can register with a random email. Write the logic to send an email verification mail to newly registered users with a verification link and verify user’s email once he clicks on the link.</p></li>
+<li><p><strong>Edit Profile</strong>: Add an edit profile page where a user can change his name, username, email, and password.</p></li>
+<li><p><strong>Forgot Password</strong>: Add forgot password functionality in the app.</p></li>
+</ul>
+<p>I encourage you to implement the above functionalities. You will find many articles on the internet explaining how to implement things like email verification, forgot password etc. If you don’t find a proper answer on the internet, then write to me in the comment section below or send me an email. I’ll help you out.</p>
+</div>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="7095759140" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="share-container">
+<p style="margin-bottom: 20px;">
+Liked the Article? Share it on Social media!
+</p>
+<div class="twitter-share-container">
+<a class="share twitter-share" href="https://twitter.com/intent/tweet?text=Spring%20Boot%20%2b%20Spring%20Security%20%2b%20JWT%20%2b%20MySQL%20%2b%20React%20Full%20Stack%20Polling%20app%20-%20Part%204&amp;url=https%3a%2f%2fwww.callicoder.com%2fspring-boot-spring-security-jwt-mysql-react-app-part-4%2f&amp;via=callicoder&amp;related=callicoder" rel="nofollow" target="_blank" title="Share on Twitter">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg> <span>Twitter</span>
+</a>
+</div>
+<div class="facebook-share-container">
+<a class="share facebook-share" href="http://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.callicoder.com%2fspring-boot-spring-security-jwt-mysql-react-app-part-4%2f" rel="nofollow" target="_blank" title="Share on Facebook">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path></svg> <span>Facebook</span>
+</a>
+</div>
+<div class="linkedin-share-container">
+<a class="share linkedin-share" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.callicoder.com%2fspring-boot-spring-security-jwt-mysql-react-app-part-4%2f&amp;mini=true&amp;title=Spring%20Boot%20%2b%20Spring%20Security%20%2b%20JWT%20%2b%20MySQL%20%2b%20React%20Full%20Stack%20Polling%20app%20-%20Part%204&amp;source=CalliCoder" rel="nofollow" target="_blank" title="Share on Linkedin">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path></svg> <span>Linkedin</span>
+</a>
+</div>
+<div class="reddit-share-container">
+<a class="share reddit-share" href="https://reddit.com/submit?url=https%3a%2f%2fwww.callicoder.com%2fspring-boot-spring-security-jwt-mysql-react-app-part-4%2f&amp;title=Spring%20Boot%20%2b%20Spring%20Security%20%2b%20JWT%20%2b%20MySQL%20%2b%20React%20Full%20Stack%20Polling%20app%20-%20Part%204" rel="nofollow" target="_blank" title="Share on Reddit">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22,11.5C22,10.1 20.9,9 19.5,9C18.9,9 18.3,9.2 17.9,9.6C16.4,8.7 14.6,8.1 12.5,8L13.6,4L17,5A2,2 0 0,0 19,7A2,2 0 0,0 21,5A2,2 0 0,0 19,3C18.3,3 17.6,3.4 17.3,4L13.3,3C13,2.9 12.8,3.1 12.7,3.4L11.5,8C9.5,8.1 7.6,8.7 6.1,9.6C5.7,9.2 5.1,9 4.5,9C3.1,9 2,10.1 2,11.5C2,12.4 2.4,13.1 3.1,13.6L3,14.5C3,18.1 7,21 12,21C17,21 21,18.1 21,14.5L20.9,13.6C21.6,13.1 22,12.4 22,11.5M9,11.8C9.7,11.8 10.2,12.4 10.2,13C10.2,13.6 9.7,14.2 9,14.2C8.3,14.2 7.8,13.7 7.8,13C7.8,12.3 8.3,11.8 9,11.8M15.8,17.2C14,18.3 10,18.3 8.2,17.2C8,17 7.9,16.7 8.1,16.5C8.3,16.3 8.6,16.2 8.8,16.4C10,17.3 14,17.3 15.2,16.4C15.4,16.2 15.7,16.3 15.9,16.5C16.1,16.7 16,17 15.8,17.2M15,14.2C14.3,14.2 13.8,13.6 13.8,13C13.8,12.3 14.4,11.8 15,11.8C15.7,11.8 16.2,12.4 16.2,13C16.2,13.7 15.7,14.2 15,14.2Z"></path></svg> <span>Reddit</span>
+</a>
+</div>
+</div>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display: block; height: 464px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-6533397327101411" data-ad-slot="1970307313" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:464px;margin:0;padding:0;position:relative;visibility:visible;width:929px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:464px;margin:0;padding:0;position:relative;visibility:visible;width:929px;background-color:transparent;"></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="disqus-container">
+<div id="disqus_thread"><iframe id="dsq-app4433" name="dsq-app4433" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/saved_resource(3).html" horizontalscrolling="no" verticalscrolling="no" style="height: 632px !important;"></iframe></div>
+<script>
+var disqus_config = function () {
+        this.page.url = 'https:\/\/www.callicoder.com\/spring-boot-spring-security-jwt-mysql-react-app-part-4\/';
+        this.page.identifier = 'https:\/\/www.callicoder.com\/spring-boot-spring-security-jwt-mysql-react-app-part-4\/';
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://callicoder-com.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">Comments powered by Disqus.</a></noscript>
+</div>
+</article>
+</div>
+<div class="secondary-content">
+<aside class="widget-area">
+<section class="widget social-media-widget">
+<h2 class="widget-heading">
+<span>Stay in touch</span>
+</h2>
+<div class="social-media-content">
+<div class="social">
+<a href="https://twitter.com/callicoder" target="_blank">
+<span class="social-twitter"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></span>
+<label>Twitter</label>
+</a>
+</div>
+<div class="social">
+<a href="https://github.com/callicoder/" target="_blank">
+<span class="social-github"><svg width="24" height="24" viewBox="0 0 24 24">
+<path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+</svg>
+</span>
+<label>Github</label>
+</a>
+</div>
+<div class="social">
+<a href="https://www.linkedin.com/in/callicoder/" target="_blank">
+<span class="social-linkedin"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path></svg></span>
+<label>Linkedin</label>
+</a>
+</div>
+<div class="social">
+<a href="https://www.facebook.com/callicoder" target="_blank">
+<span class="social-facebook"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path></svg> </span>
+<label>Facebook</label>
+</a>
+</div>
+<div class="social">
+<a href="https://www.reddit.com/user/callicoder" target="_blank">
+<span class="social-reddit"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22,11.5C22,10.1 20.9,9 19.5,9C18.9,9 18.3,9.2 17.9,9.6C16.4,8.7 14.6,8.1 12.5,8L13.6,4L17,5A2,2 0 0,0 19,7A2,2 0 0,0 21,5A2,2 0 0,0 19,3C18.3,3 17.6,3.4 17.3,4L13.3,3C13,2.9 12.8,3.1 12.7,3.4L11.5,8C9.5,8.1 7.6,8.7 6.1,9.6C5.7,9.2 5.1,9 4.5,9C3.1,9 2,10.1 2,11.5C2,12.4 2.4,13.1 3.1,13.6L3,14.5C3,18.1 7,21 12,21C17,21 21,18.1 21,14.5L20.9,13.6C21.6,13.1 22,12.4 22,11.5M9,11.8C9.7,11.8 10.2,12.4 10.2,13C10.2,13.6 9.7,14.2 9,14.2C8.3,14.2 7.8,13.7 7.8,13C7.8,12.3 8.3,11.8 9,11.8M15.8,17.2C14,18.3 10,18.3 8.2,17.2C8,17 7.9,16.7 8.1,16.5C8.3,16.3 8.6,16.2 8.8,16.4C10,17.3 14,17.3 15.2,16.4C15.4,16.2 15.7,16.3 15.9,16.5C16.1,16.7 16,17 15.8,17.2M15,14.2C14.3,14.2 13.8,13.6 13.8,13C13.8,12.3 14.4,11.8 15,11.8C15.7,11.8 16.2,12.4 16.2,13C16.2,13.7 15.7,14.2 15,14.2Z"></path></svg></span>
+<label>Reddit</label>
+</a>
+</div>
+</div>
+</section>
+<section class="widget subscribe-widget">
+<h3 class="sub-heading widget-heading">
+<span>Subscribe to our Newsletter</span>
+</h3>
+<div id="mc_embed_signup">
+<form action="https://callicoder.us16.list-manage.com/subscribe/post?u=0b142d9f36a87898f95226c63&amp;id=7789061692" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+<div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+<input type="text" value="" placeholder="Your Name" name="NAME" class="" id="mce-NAME">
+</div>
+<div class="mc-field-group">
+
+<input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email" required="true" id="mce-EMAIL">
+</div>
+<div style="position: absolute; display: inline-block; left: -5000px;" aria-hidden="true"><input type="text" name="b_0b142d9f36a87898f95226c63_7789061692" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</div>
+</form>
+</div>
+</section>
+<section class="widget recent-posts-widget">
+<h2 class="widget-heading">
+<span>Recent Articles</span>
+</h2>
+<div class="widget-post-list">
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/deploy-spring-mysql-react-nginx-kubernetes-persistent-volume-secret/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/kubernetes-spring-boot-mysql-react-nginx-persistent-volume-secrets-deploy.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/deploy-spring-mysql-react-nginx-kubernetes-persistent-volume-secret/">
+Deploying a full-stack Spring boot, Mysql, and React app on Kubernetes with Persistent Volumes and Secrets
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/deploy-multi-container-go-redis-app-kubernetes/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/deploy-go-redis-app-kubernetes.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/deploy-multi-container-go-redis-app-kubernetes/">
+Deploying a stateless Go app with Redis on Kubernetes
+</div>
+</a>
+</div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 20px 0px; box-sizing: content-box; width: auto; height: 0px;"><ins data-ad-type="text" data-native-settings-key="e6356534" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-6533397327101411" data-adsbygoogle-status="done" style="width: 100%; height: 0px; display: inline-block;"><ins id="aswift_11_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 299px; background-color: transparent;"><ins id="aswift_11_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 299px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe id="aswift_11" name="aswift_11" style="left:0;position:absolute;top:0;border:0;width:299px;height:55px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="299" height="55" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(4).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!b" data-google-query-id="CP2d3Kjz0-oCFSnVfAodT84OOQ" data-load-complete="true"></iframe></ins></ins></ins></div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/spring-boot-mysql-react-docker-compose-example/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/spring-boot-mysql-react-docker-compose-example.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/spring-boot-mysql-react-docker-compose-example/">
+Spring Boot, Mysql, React docker compose example
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/go-read-write-environment-variables/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/go-read-write-environment-variables.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/go-read-write-environment-variables/">
+Reading and Writing Environment Variables in Go
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/go-read-command-line-arguments/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/go-read-command-line-arguments.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/go-read-command-line-arguments/">
+Reading command line arguments in Go
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="widget trending-posts-widget">
+<h2 class="widget-heading">
+<span>Popular Articles</span>
+</h2>
+<div class="widget-post-list">
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-1/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/spring-boot-spring-security-jwt-react-and-design-full-stack-polls-app-part-1.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/spring-boot-spring-security-jwt-mysql-react-app-part-1/">
+Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling App - Part 1
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/spring-boot-websocket-chat-example/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/spring-boot-websocket-sockjs-stomp-chat-example.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/spring-boot-websocket-chat-example/">
+Building a chat application with Spring Boot and WebSocket
+</div>
+</a>
+</div><div class="google-auto-placed" style="clear: none; padding: 0px; margin: 20px 0px; box-sizing: content-box; width: auto; height: 0px;"><ins data-ad-type="text" data-native-settings-key="d3a1a4c4" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-6533397327101411" data-adsbygoogle-status="done" style="width: 100%; height: 0px; display: inline-block;"><ins id="aswift_12_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 299px; background-color: transparent;"><ins id="aswift_12_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 299px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe id="aswift_12" name="aswift_12" style="left:0;position:absolute;top:0;border:0;width:299px;height:55px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="299" height="55" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(5).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!c" data-google-query-id="CLT_26jz0-oCFUYXvQod7wIIzQ" data-load-complete="true"></iframe></ins></ins></ins></div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/java-8-completablefuture-tutorial/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/java-8-completable-future.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/java-8-completablefuture-tutorial/">
+Java CompletableFuture Tutorial with Examples
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/spring-boot-rest-api-tutorial-with-jpa-hibernate-and-mysql.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/">
+Spring Boot, MySQL, JPA, Hibernate Restful CRUD API Tutorial
+</div>
+</a>
+</div>
+<div class="widget-post-column">
+<a href="https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/" class="widget-post-content clearfix">
+<div class="widget-post-thumbnail" style="background-image:url(&#39;https://www.callicoder.com/assets/images/post/thumbnail/node-express-rest-api-tutorial.jpg&#39;)">
+</div>
+<div class="widget-post-info" href="https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/">
+Building a Restful CRUD API with Node.js, Express and MongoDB
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="widget support-widget">
+<h2 class="widget-heading">Support me</h2>
+<div class="support-widget-container clearfix">
+<p class="widget-description">
+Love my tutorials? You can support me by donating on the following sites:
+</p>
+<div class="support-widget-content">
+<a class="support patreon" href="https://www.patreon.com/callicoder" target="_blank">
+<span><svg xmlns="http://www.w3.org/2000/svg" width="110" height="39" viewBox="0 0 292 104">
+<path fill="#fa6854" fill-rule="evenodd" d="M284.367244,104 L284.367244,1.42108547e-14 L291.998128,1.42108547e-14 L291.998128,104 L284.367244,104 Z M241.879569,34.6685484 L249.462761,34.6685484 L249.462761,67.6406851 L241.502892,67.6406851 L229.631221,46.443665 L229.631221,67.6406851 L222.000337,67.6406851 L222.000337,34.6685484 L229.960206,34.6685484 L241.879569,56.1472494 L241.879569,34.6685484 Z M191.902143,33.8203912 C202.828713,33.8203912 209.329565,42.1108994 209.329565,51.1546654 C209.329565,60.1983341 202.828713,68.4889396 191.902143,68.4889396 C180.925934,68.4889396 174.425082,60.1983341 174.425082,51.1546654 C174.425082,42.1108994 180.925934,33.8203912 191.902143,33.8203912 Z M201.558521,51.1546654 C201.558521,45.7379055 197.883238,40.6977258 191.902143,40.6977258 C185.872382,40.6977258 182.245765,45.7379055 182.245765,51.1546654 C182.245765,56.5714254 185.872382,61.6115077 191.902143,61.6115077 C197.883238,61.6115077 201.558521,56.5714254 201.558521,51.1546654 Z M68.6789331,41.2626448 L68.6789331,34.6685484 L91.2399738,34.6685484 L91.2399738,41.2626448 L83.7501245,41.2626448 L83.7501245,67.6406851 L76.1195321,67.6406851 L76.1195321,41.2626448 L68.6789331,41.2626448 Z M149.555601,48.2809172 L162.037548,48.2809172 L162.037548,54.2642508 L149.555601,54.2642508 L149.555601,61.516511 L162.037548,61.516511 L162.037548,67.6406851 L141.924717,67.6406851 L141.924717,34.6685484 L162.037548,34.6685484 L162.037548,40.7927225 L149.555601,40.7927225 L149.555601,48.2809172 Z M116.95985,34.6685484 C124.259803,34.6685484 128.970707,40.1803051 128.970707,46.5860627 C128.970707,51.2021638 126.520842,55.2990922 122.422162,57.2313411 L129.0184,67.6406851 L120.16307,67.6406851 L114.320187,58.5019223 L110.74029,58.5019223 L110.74029,67.6406851 L103.110379,67.6406851 L103.110379,34.6685484 L116.95985,34.6685484 Z M121.245409,46.5860627 C121.245409,43.5239757 119.172223,40.8860646 115.969003,40.8860646 L110.74029,40.8860646 L110.74029,52.2845035 L115.969003,52.2845035 C119.172223,52.2845035 121.245409,49.6481497 121.245409,46.5860627 Z M53.7468301,63.6370987 L42.0175573,63.6370987 L40.7452241,67.6406851 L32.5954591,67.6406851 L44.3722302,34.6685484 L51.3904052,34.6685484 L63.3079195,67.6406851 L55.0174113,67.6406851 L53.7468301,63.6370987 Z M47.9042396,44.088992 L43.8531549,57.6554197 L51.8603276,57.6554197 L47.9042396,44.088992 Z M13.8006102,34.6685484 C21.1021207,34.6685484 25.8131212,40.1803051 25.8131212,46.5860627 C25.8131212,52.9918203 21.1021207,58.5019223 13.8006102,58.5019223 L7.63059242,58.5019223 L7.63059242,67.6406851 L0,67.6406851 L0,34.6685484 L13.8006102,34.6685484 Z M18.1350304,46.5860627 C18.1350304,43.5239757 16.061941,40.8860646 12.8590136,40.8860646 L7.63059242,40.8860646 L7.63059242,52.2845035 L12.8590136,52.2845035 C16.061941,52.2845035 18.1350304,49.6481497 18.1350304,46.5860627 Z"></path>
+</svg>
+</span>
+</a>
+<a class="support paypal" href="https://paypal.me/callicoder/25" target="_blank">
+<span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="110px" height="26px" viewBox="0 0 124 33" enable-background="new 0 0 124 33" xml:space="preserve">
+<path fill="#253B80" d="M46.211,6.749h-6.839c-0.468,0-0.866,0.34-0.939,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.564,0.658
+	h3.265c0.468,0,0.866-0.34,0.939-0.803l0.746-4.73c0.072-0.463,0.471-0.803,0.938-0.803h2.165c4.505,0,7.105-2.18,7.784-6.5
+	c0.306-1.89,0.013-3.375-0.872-4.415C50.224,7.353,48.5,6.749,46.211,6.749z M47,13.154c-0.374,2.454-2.249,2.454-4.062,2.454
+	h-1.032l0.724-4.583c0.043-0.277,0.283-0.481,0.563-0.481h0.473c1.235,0,2.4,0,3.002,0.704C47.027,11.668,47.137,12.292,47,13.154z"></path>
+<path fill="#253B80" d="M66.654,13.075h-3.275c-0.279,0-0.52,0.204-0.563,0.481l-0.145,0.916l-0.229-0.332
+	c-0.709-1.029-2.29-1.373-3.868-1.373c-3.619,0-6.71,2.741-7.312,6.586c-0.313,1.918,0.132,3.752,1.22,5.031
+	c0.998,1.176,2.426,1.666,4.125,1.666c2.916,0,4.533-1.875,4.533-1.875l-0.146,0.91c-0.055,0.348,0.213,0.66,0.562,0.66h2.95
+	c0.469,0,0.865-0.34,0.939-0.803l1.77-11.209C67.271,13.388,67.004,13.075,66.654,13.075z M62.089,19.449
+	c-0.316,1.871-1.801,3.127-3.695,3.127c-0.951,0-1.711-0.305-2.199-0.883c-0.484-0.574-0.668-1.391-0.514-2.301
+	c0.295-1.855,1.805-3.152,3.67-3.152c0.93,0,1.686,0.309,2.184,0.892C62.034,17.721,62.232,18.543,62.089,19.449z"></path>
+<path fill="#253B80" d="M84.096,13.075h-3.291c-0.314,0-0.609,0.156-0.787,0.417l-4.539,6.686l-1.924-6.425
+	c-0.121-0.402-0.492-0.678-0.912-0.678h-3.234c-0.393,0-0.666,0.384-0.541,0.754l3.625,10.638l-3.408,4.811
+	c-0.268,0.379,0.002,0.9,0.465,0.9h3.287c0.312,0,0.604-0.152,0.781-0.408L84.564,13.97C84.826,13.592,84.557,13.075,84.096,13.075z
+	"></path>
+<path fill="#179BD7" d="M94.992,6.749h-6.84c-0.467,0-0.865,0.34-0.938,0.802l-2.766,17.537c-0.055,0.346,0.213,0.658,0.562,0.658
+	h3.51c0.326,0,0.605-0.238,0.656-0.562l0.785-4.971c0.072-0.463,0.471-0.803,0.938-0.803h2.164c4.506,0,7.105-2.18,7.785-6.5
+	c0.307-1.89,0.012-3.375-0.873-4.415C99.004,7.353,97.281,6.749,94.992,6.749z M95.781,13.154c-0.373,2.454-2.248,2.454-4.062,2.454
+	h-1.031l0.725-4.583c0.043-0.277,0.281-0.481,0.562-0.481h0.473c1.234,0,2.4,0,3.002,0.704
+	C95.809,11.668,95.918,12.292,95.781,13.154z"></path>
+<path fill="#179BD7" d="M115.434,13.075h-3.273c-0.281,0-0.52,0.204-0.562,0.481l-0.145,0.916l-0.23-0.332
+	c-0.709-1.029-2.289-1.373-3.867-1.373c-3.619,0-6.709,2.741-7.311,6.586c-0.312,1.918,0.131,3.752,1.219,5.031
+	c1,1.176,2.426,1.666,4.125,1.666c2.916,0,4.533-1.875,4.533-1.875l-0.146,0.91c-0.055,0.348,0.213,0.66,0.564,0.66h2.949
+	c0.467,0,0.865-0.34,0.938-0.803l1.771-11.209C116.053,13.388,115.785,13.075,115.434,13.075z M110.869,19.449
+	c-0.314,1.871-1.801,3.127-3.695,3.127c-0.949,0-1.711-0.305-2.199-0.883c-0.484-0.574-0.666-1.391-0.514-2.301
+	c0.297-1.855,1.805-3.152,3.67-3.152c0.93,0,1.686,0.309,2.184,0.892C110.816,17.721,111.014,18.543,110.869,19.449z"></path>
+<path fill="#179BD7" d="M119.295,7.23l-2.807,17.858c-0.055,0.346,0.213,0.658,0.562,0.658h2.822c0.469,0,0.867-0.34,0.939-0.803
+	l2.768-17.536c0.055-0.346-0.213-0.659-0.562-0.659h-3.16C119.578,6.749,119.338,6.953,119.295,7.23z"></path>
+<path fill="#253B80" d="M7.266,29.154l0.523-3.322l-1.165-0.027H1.061L4.927,1.292C4.939,1.218,4.978,1.149,5.035,1.1
+	c0.057-0.049,0.13-0.076,0.206-0.076h9.38c3.114,0,5.263,0.648,6.385,1.927c0.526,0.6,0.861,1.227,1.023,1.917
+	c0.17,0.724,0.173,1.589,0.007,2.644l-0.012,0.077v0.676l0.526,0.298c0.443,0.235,0.795,0.504,1.065,0.812
+	c0.45,0.513,0.741,1.165,0.864,1.938c0.127,0.795,0.085,1.741-0.123,2.812c-0.24,1.232-0.628,2.305-1.152,3.183
+	c-0.482,0.809-1.096,1.48-1.825,2c-0.696,0.494-1.523,0.869-2.458,1.109c-0.906,0.236-1.939,0.355-3.072,0.355h-0.73
+	c-0.522,0-1.029,0.188-1.427,0.525c-0.399,0.344-0.663,0.814-0.744,1.328l-0.055,0.299l-0.924,5.855l-0.042,0.215
+	c-0.011,0.068-0.03,0.102-0.058,0.125c-0.025,0.021-0.061,0.035-0.096,0.035H7.266z"></path>
+<path fill="#179BD7" d="M23.048,7.667L23.048,7.667L23.048,7.667c-0.028,0.179-0.06,0.362-0.096,0.55
+	c-1.237,6.351-5.469,8.545-10.874,8.545H9.326c-0.661,0-1.218,0.48-1.321,1.132l0,0l0,0L6.596,26.83l-0.399,2.533
+	c-0.067,0.428,0.263,0.814,0.695,0.814h4.881c0.578,0,1.069-0.42,1.16-0.99l0.048-0.248l0.919-5.832l0.059-0.32
+	c0.09-0.572,0.582-0.992,1.16-0.992h0.73c4.729,0,8.431-1.92,9.513-7.476c0.452-2.321,0.218-4.259-0.978-5.622
+	C24.022,8.286,23.573,7.945,23.048,7.667z"></path>
+<path fill="#222D65" d="M21.754,7.151c-0.189-0.055-0.384-0.105-0.584-0.15c-0.201-0.044-0.407-0.083-0.619-0.117
+	c-0.742-0.12-1.555-0.177-2.426-0.177h-7.352c-0.181,0-0.353,0.041-0.507,0.115C9.927,6.985,9.675,7.306,9.614,7.699L8.05,17.605
+	l-0.045,0.289c0.103-0.652,0.66-1.132,1.321-1.132h2.752c5.405,0,9.637-2.195,10.874-8.545c0.037-0.188,0.068-0.371,0.096-0.55
+	c-0.313-0.166-0.652-0.308-1.017-0.429C21.941,7.208,21.848,7.179,21.754,7.151z"></path>
+<path fill="#253B80" d="M9.614,7.699c0.061-0.393,0.313-0.714,0.652-0.876c0.155-0.074,0.326-0.115,0.507-0.115h7.352
+	c0.871,0,1.684,0.057,2.426,0.177c0.212,0.034,0.418,0.073,0.619,0.117c0.2,0.045,0.395,0.095,0.584,0.15
+	c0.094,0.028,0.187,0.057,0.278,0.086c0.365,0.121,0.704,0.264,1.017,0.429c0.368-2.347-0.003-3.945-1.272-5.392
+	C20.378,0.682,17.853,0,14.622,0h-9.38c-0.66,0-1.223,0.48-1.325,1.133L0.01,25.898c-0.077,0.49,0.301,0.932,0.795,0.932h5.791
+	l1.454-9.225L9.614,7.699z"></path>
+</svg></span>
+</a>
+</div>
+</div>
+</section>
+<div class="adsense-code-block" id="sidebar-top">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="7461279901" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(6).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!5" data-google-query-id="CLDMuqjz0-oCFVebvQodxwcDIg" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="4446810420" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0;width:300px;height:600px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="600" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(7).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!6" data-google-query-id="CNrvu6jz0-oCFdbDfAoda0AMaA" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="adsense-code-block">
+<script async="" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/f(17).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6533397327101411" data-ad-slot="7277970707" data-adsbygoogle-status="done"><ins id="aswift_6_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_6_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(8).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!7" data-google-query-id="CKmCvajz0-oCFY4dvQodjk4FFw" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="wrapper">
+<div class="footer-col-wrapper">
+<div class="footer-col footer-col-1">
+<div class="footer-logo">
+CalliCoder
+</div>
+<div class="footer-headline">
+<span>Software Development Tutorials written from the heart!</span>
+</div>
+<div class="copyright">
+<span>Copyright © 2017-2019</span>
+</div>
+</div>
+<div class="footer-col footer-col-2">
+<div class="footer-title">
+Resources
+</div>
+<ul class="footer-list">
+<li>
+<a href="https://www.callicoder.com/about">About &amp; Contact</a>
+</li>
+<li>
+<a href="https://www.callicoder.com/advertise">Advertise</a>
+</li>
+<li>
+<a href="https://www.callicoder.com/recommended-books">Recommended Books</a>
+</li>
+<li>
+<a href="https://www.callicoder.com/recommended-courses">Recommended Courses</a>
+</li>
+<li>
+<a href="https://www.callicoder.com/privacy-policy">Privacy Policy</a>
+</li>
+<li>
+<a href="https://www.callicoder.com/sitemap.xml">Sitemap</a>
+</li>
+</ul>
+</div>
+<div class="footer-col footer-col-3">
+<div class="footer-title">
+Tools
+</div>
+<ul class="footer-list">
+<li>
+<a href="https://www.urlencoder.io/">URL Encoder</a>
+</li>
+<li>
+<a href="https://www.urldecoder.io/">URL Decoder</a>
+</li>
+<li>
+<a href="https://www.base64encoder.io/">Base64 Encoder</a>
+</li>
+<li>
+<a href="https://www.base64decoder.io/">Base64 Decoder</a>
+</li>
+<li>
+<a href="https://www.qrcodebit.com/">QRCodeBit</a>
+</li>
+<li>
+<a href="https://www.asciitable.xyz/">ASCII Table</a>
+</li>
+<li>
+<a href="https://www.jsonformatter.io/">JSON Formatter</a>
+</li>
+</ul>
+</div>
+<div class="footer-col footer-col-4">
+<div class="footer-title">
+Connect
+</div>
+<ul class="footer-list">
+<li>
+<a href="https://twitter.com/callicoder">Twitter</a>
+</li>
+<li>
+<a href="https://github.com/callicoder">Github</a>
+</li>
+<li>
+<a href="https://www.facebook.com/callicoder">Facebook</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/callicoder" class="social-linkedin">
+Linkedin
+</a>
+</li>
+<li>
+<a href="https://www.reddit.com/user/callicoder" class="social-googleplus">
+Reddit
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/app.js"></script>
+<script type="text/javascript">
+function executeQuery() {
+        var input = document.getElementById('cse-search-input-box-id');
+        if (input.value) {
+          document.location.href = "https:\/\/www.callicoder.com" + "/search?q=" + input.value;
+        }
+        return false;
+      }
+</script>
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_7_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_7_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/ads(9).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!7" data-load-complete="true"></iframe></ins></ins></ins><iframe style="display: none;" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/saved_resource(4).html"></iframe><iframe id="google_osd_static_frame_9644061451813" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/saved_resource(5).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./Spring Boot + Spring Security + JWT + MySQL + React Full Stack Polling app - Part 4 _ CalliCoder_files/zrt_lookup.html" data-ad-client="ca-pub-6533397327101411" style="display: none;"></iframe></html>
